@@ -3,6 +3,11 @@ function init(){
     if(btnpedir.addEventListener){
         btnpedir.addEventListener("click", caracoles, false);
     }
+    
+    var tot = document.getElementById("total");
+    tot.style.backgroundColor = "#F7ECDE";
+    tot.style.borderRadius = "10px";
+    tot.style.paddingLeft = "20px";
 }
 function caracoles(){
     var cm = new combos( sc=7.25, cp=5.75,nf=3.50, cantidad);
