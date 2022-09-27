@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller practico 2</title>
+    <script src="js/menu.js"></script>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body class="cuerpo">
+    <div class="contenedor">
+        <form action="" id="frmaccion">
+            <h1>Selección de Menú</h1>
+            <h2>Combos</h2>
+            <div class="opciones">
+
+            
+            <div class="card">
+                <img src="media/supercombo.png" class="card-img-top" alt="">
+                <label for="" class="card-title">Super combo $7.25 <input type="radio" id="super" name="combo"></label>
+                
+                <p class="card-text">Tres piezas de pollo, ensalada, papas fritas y bebida grande de su elección</p>
+                
+            </div>
+            <div class="card">
+                <img src="media/personal.png" class="card-img-top" alt="">
+                <br>
+                
+                <label for="" class="card-title">Combo Personal $5.75 <input type="radio" id="personal" name="combo"></label>
+                
+                <p class="card-text">Dos piezas  de pollo, papa frita y bebida mediana</p>
+            </div>
+            <div class="card">
+                <img src="media/infantil.png" class="card-img-top" alt="">
+                <br>
+                <div class="card-body">
+                    <label for="" class="card-title">Combo infantil $3.50 <input type="radio" id="infantil" name="combo"></label>
+                </div>
+                <p class="card-text">Una pieza de pollo, papas  fritas y una bebida pequeña</p>
+                
+            </div>
+        </div>
+        <br>
+            <div class="combos">
+                <label for="">Seleccione la cantidad de combos </label>
+                <input type="number" id="cantidad" class="numero" min="1" max="10" value="1"placeholder="1">
+            </div>
+            
+            <h1>Ingredientes</h1>
+            <div class="ingredients" id="ingredien">
+                <input type="checkbox" name="ingre" id="i1">
+                <label for="">Ensalada </label><br>
+                <input type="checkbox" name="ingre" id="i2">
+                <label for="">Papas fritas</label><br>
+                <input type="checkbox" name="ingre" id="i3">
+                <label for="">Pieza de pollo grande </label><br>
+                <input type="checkbox" name="ingre" id="i4">
+                <label for="">Pieza de pollo mediana </label><br>
+                <input type="checkbox" name="ingre" id="i5">
+                <label for="">Pieza de pollo pequeña </label><br>
+                <input type="checkbox" name="ingre" id="i6">
+                <label for="">Bebida grande</label><br>
+                <input type="checkbox" name="ingre" id="i7">
+                <label for="">Bebida mediana</label><br>
+                <input type="checkbox" name="ingre" id="i8">
+                <label for="">Bebida pequeña</label><br>
+                <input type="checkbox" name="ingre" id="i9">
+                <label for="">Café</label><br>
+                <input type="checkbox" name="ingre" id="i10">
+                <label for="">Postres</label><br>
+            </div>
+
+            <div class="producto" id="producto">
+                <h3></h3>
+            </div>
+            <div class="cantidad2" id="cantidad2">
+                <h3></h3>
+            </div>
+            <div class="total" id="total">
+                <h3></h3>
+            </div>
+            <div class="total" id="totale">
+                <h3></h3>
+            </div>
+            <input type="button" value="Pedir" name="btnpedir" id="pedir">
+        </form>
+    </div>
+    <div class="container">
+ 
+ 
+ 
+        <div>
+          <div class="col-md-4">
+                <div ><h4>Comentarios</h4></div>
+                </div>
+                <div id="result">
+     
+     
+     
+     
+            </div>
+     
+        <div>
+            <form>
+                <div>
+                <label>Comentario</label>
+                <textarea id="comment" class="form-control"></textarea></label>
+                </div>
+                <button type="button" class="btn btn-primary" onclick="comentarios();">Enviar</button>
+            </form>
+        </div>
+     
+     
+     
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+        </div>
+        </div>
+</body>
+</html>
